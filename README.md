@@ -1,2 +1,1 @@
-# lab2_task
-branching and pull practice 
+hi! my name is habiba
