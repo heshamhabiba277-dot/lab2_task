@@ -1,0 +1,21 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello World - Job 1
+        run: echo "Hello World from Job 1!"
+
+  second-job:
+    runs-on: ubuntu-latest
+    needs: first-job
+    steps:
+      - name: Say Hello World - Job 2
+        run: echo "Hello World from Job 2!"
